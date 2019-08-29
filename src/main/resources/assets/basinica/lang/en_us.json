@@ -1,0 +1,11 @@
+{
+  "block.basinica.firstblock": "The Original Block",
+  "item.basinica.firstitem": "Configurator",
+  "item.basinica.emerald_pickaxe": "Emerald Pickaxe",
+  "item.basinica.emerald_sword": "Emerald Sword",
+  "item.basinica.diamond_shield": "Diamond Shield",
+  "block.basinica.solarpanel": "Solar Panel",
+  "block.basinica.capacitor": "Energy Capacitor",
+  "_comment": "Creative Tabs",
+  "itemGroup.basinica": "Basinica"
+}

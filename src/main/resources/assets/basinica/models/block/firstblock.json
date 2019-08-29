@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "particle": "basinica:block/firstblock",
+    "down": "basinica:block/firstblock",
+    "up": "basinica:block/firstblock",
+    "east": "basinica:block/firstblock",
+    "west": "basinica:block/firstblock",
+    "north": "basinica:block/firstblock_front",
+    "south": "basinica:block/firstblock"
+  }
+}

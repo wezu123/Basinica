@@ -1,0 +1,27 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "basinica:block/firstblock"
+    },
+    "facing=south": {
+      "model": "basinica:block/firstblock",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "basinica:block/firstblock",
+      "y": 270
+    },
+    "facing=east": {
+      "model": "basinica:block/firstblock",
+      "y": 90
+    },
+    "facing=up": {
+      "model": "basinica:block/firstblock",
+      "x": -90
+    },
+    "facing=down": {
+      "model": "basinica:block/firstblock",
+      "x": 90
+    }
+  }
+}

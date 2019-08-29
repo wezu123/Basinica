@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " i ",
+    " i ",
+    " q "
+  ],
+  "key": {
+    "i": {
+      "item": "minecraft:iron_ingot"
+    },
+    "q": {
+      "item": "basinica:firstblock"
+    }
+  },
+  "result": {
+    "item": "basinica:firstitem"
+  }
+}
