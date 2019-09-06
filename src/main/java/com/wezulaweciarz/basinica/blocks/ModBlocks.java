@@ -3,6 +3,7 @@ package com.wezulaweciarz.basinica.blocks;
 import com.wezulaweciarz.basinica.blocks.firstblock.FirstBlock;
 import com.wezulaweciarz.basinica.blocks.firstblock.FirstBlockContainer;
 import com.wezulaweciarz.basinica.blocks.firstblock.FirstBlockTile;
+import com.wezulaweciarz.basinica.blocks.ores.CobaltOre;
 import net.minecraft.inventory.container.ContainerType;
 import net.minecraft.tileentity.TileEntityType;
 import net.minecraftforge.registries.ObjectHolder;
@@ -17,6 +18,9 @@ public class ModBlocks {
 
     @ObjectHolder("basinica:capacitor")
     public static Capacitor CAPACITOR;
+
+    @ObjectHolder("basinica:cobalt_ore")
+    public static CobaltOre COBALT_ORE;
 
     @ObjectHolder("basinica:firstblock")
     public static TileEntityType<FirstBlockTile> FIRSTBLOCK_TILE;

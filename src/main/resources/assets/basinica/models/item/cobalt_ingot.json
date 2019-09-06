@@ -1,0 +1,6 @@
+{
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "basinica:item/cobalt_ingot"
+  }
+}

@@ -4,6 +4,8 @@ import com.wezulaweciarz.basinica.blocks.*;
 import com.wezulaweciarz.basinica.blocks.firstblock.FirstBlock;
 import com.wezulaweciarz.basinica.blocks.firstblock.FirstBlockContainer;
 import com.wezulaweciarz.basinica.blocks.firstblock.FirstBlockTile;
+import com.wezulaweciarz.basinica.blocks.ores.CobaltOre;
+import com.wezulaweciarz.basinica.items.CobaltIngot;
 import com.wezulaweciarz.basinica.items.FirstItem;
 import com.wezulaweciarz.basinica.setup.ClientProxy;
 import com.wezulaweciarz.basinica.setup.IProxy;
@@ -45,6 +47,7 @@ public class Basinica {
     private void setup(final FMLCommonSetupEvent event) {
         setup.init();
         proxy.init();
+        OreGen.setupOreGen();
     }
 
     // You can use EventBusSubscriber to automatically subscribe events on the contained class (this is subscribing to the MOD
@@ -56,6 +59,7 @@ public class Basinica {
             event.getRegistry().register(new FirstBlock());
             event.getRegistry().register(new SolarPanel());
             event.getRegistry().register(new Capacitor());
+            event.getRegistry().register(new CobaltOre());
         }
         @SubscribeEvent
         public static void onItemsRegistry(final RegistryEvent.Register<Item> event) {
@@ -64,7 +68,9 @@ public class Basinica {
             event.getRegistry().register(new BlockItem(ModBlocks.FIRSTBLOCK, properties).setRegistryName("firstblock"));
             event.getRegistry().register(new BlockItem(ModBlocks.SOLARPANEL, properties).setRegistryName("solarpanel"));
             event.getRegistry().register(new BlockItem(ModBlocks.CAPACITOR, properties).setRegistryName("capacitor"));
+            event.getRegistry().register(new BlockItem(ModBlocks.COBALT_ORE, properties).setRegistryName("cobalt_ore"));
             event.getRegistry().register(new FirstItem());
+            event.getRegistry().register(new CobaltIngot());
             event.getRegistry().register(new PickaxeItem(BasinicaTiers.EMERALD, 1, -2.8f, properties).setRegistryName("emerald_pickaxe"));
             event.getRegistry().register(new SwordItem(BasinicaTiers.EMERALD, 4, -2.4f, properties).setRegistryName("emerald_sword"));
             event.getRegistry().register(new ShieldItem(properties.maxDamage(1)).setRegistryName("diamond_shield"));
